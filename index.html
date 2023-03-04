@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AscentAcademy_SurveyForm</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Survey Form</h1>
+        <div class="mode">
+            <label for="dark-mode">Dark Mode</label>
+            <button id="change">ON</button>
+        </div>
+    </div>
+    <div class="container">
+        <form action="survey-form">
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-control">
+                <label for="email" class="">Email</label>
+                <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="form-control">
+                <label for="age">Age</label>
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="form-control">
+                <label for="role">Which option best describes you?</label>
+                <select name="role" id="role" class="select">
+                    <option value="student">Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="professional">Professional</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="recomend">Would you recomend us to a friend?</label>
+                <select name="recomend" id="" class="select">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="feedback">Feedback</label>
+                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+            </div>
+            <div class="submit">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+    <footer>Coded By Piyush Kumar Das</footer>
+    <script src="script.js"></script>
+</body>
+</html>
